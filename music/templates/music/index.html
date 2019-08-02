@@ -1,0 +1,391 @@
+{% extends 'music/base.html' %}
+{% load static %}
+	<!-- Favicon  -->
+    <link rel="icon" href="{% static 'music/images/headphone.png' %}">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+
+
+{% block content %}
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="text-container">
+                            <h1>Nepali Genre</h1>
+                            <h4>A music genre classification for <span id="js-rotating">DOHORI, CLASSICAL, POP</span></h4>
+                            <a class="btn-solid-lg page-scroll mt-4" href="#basic-2"><i class="fas fa-headphones"></i> GET STARTED</a>
+                        </div>
+                    </div> <!-- end of col -->
+                    <div class="col-lg-5">
+                        <div class="image-container">
+                            <img class="img-fluid" src="{% static 'music/images/guitar.png' %}" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <!-- Features -->
+    <div id="features" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>FEATURES</h2>
+                    <div class="p-heading p-large">
+                      Nepali Genre was designed to help music lover to decide what nepali music genre
+                      they are really into by enabling them to check music genre of their most loved songs.
+                     </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-music"></i>DOHORI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-microphone"></i>CLASSICAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-guitar"></i>POP</a>
+                    </li>
+                </ul>
+                <!-- end of tabs links -->
+
+
+                <!-- Tabs Content-->
+                <div class="tab-content" id="lenoTabsContent">
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-2">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="{% static 'music/images/madal.png' %}" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-md-8">
+                                    <div class="icon-cards-area">
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-book-open"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Introduction</h4>
+                                                <p>Dohori is a genre of Nepali folk music and has roots in the rural courtship traditions.
+                                                   In Nepali, Dohori literally means from both sides or a debate.
+                                                   This debate is in musical rhythm, and involves quick and witty poetry.
+                                                   The two teams taking part in a Dohori usually involves boys and girls in rival teams.
+                                                   The song starts with a question, usually from the boys' side.
+                                                   The girl follows the question with a quick response and the two teams continue the musical conversation.
+
+                                                  <br>Dohori songs can last for as long as a week. The length of the Dohori depends on the quick thinking ability and wit of the players</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-cards-area">
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fas fa-music"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Instruments</h4>
+                                                    <p>The musical instruments used to create Dohori music are :
+                                                    <ul>
+                                                        <li>Madal</li>
+                                                        <li>Dholak</li>
+                                                        <li>Flute</li>
+                                                        <li>Panchai Baja</li>
+                                                    </ul></p>
+                                                </div>
+                                            </div>
+                                    </div> <!-- end of icon cards area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text and icon cards area -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-3">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-md-8">
+                                    <div class="icon-cards-area">
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-book-open"></i>
+                                            </div>
+                                        </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Introduction</h4>
+                                                <p>There are numerous professional classical musicians in the Kathmandu Valley. Bands such as, Sur-Sudha, Sukarma, Trikaal, Kutumba are popular and well known in Nepal.
+
+                                                    <br>Classical music organizations such as Kalanidhi Indira Sangeet Mahavidyalaya, Nepal Sangeet Vidyalaya, SK Gurukul Sangeet Pathshala, Narayan Music Academy, Gandharva Sangeet Vidyalaya, Shree Sangeet Pathshala, Kirateswor Sangeet Ashram, Kapan Sangit Sarowar, Yalamaya Kendra, Ram Mandir, Gurukul Sangeet Pathshala, Atul Music Memorial Gurukul etc. have been continuously contributing towards the development of Nepali classical music.
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="icon-cards-area">
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-music"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Instruments</h4>
+                                            <p>The musical instruments used to create Classical music are :
+                                            <ul>
+                                                <li>Sitar</li>
+                                                <li>Jaltarang</li>
+                                                <li>Shehnai</li>
+                                                <li>Tabla</li>
+                                                <li>Harmonium</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div> <!-- end of icon cards area -->
+                                </div> <!-- end of col-md-8 -->
+
+
+                                <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="{% static 'music/images/sitar.png' %}" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+                                <!-- end of text and icon cards area -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div><!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-2">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="{% static 'music/images/guitar.png' %}" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-md-8">
+                                    <div class="icon-cards-area">
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-book-open"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Introduction</h4>
+                                            <p>The definition of pop music has evolved throughout history ever since the genre originated in the United States during mid-1950s. Pop music in general has primarily embodied commercial, ephemeral and accessible characteristics.
+
+                                                <br> But Nepali pop has its own story of evolution. Commercial Nepali music indulged in its folk roots during the beginning, but later when on to be influenced by Bollywood tunes and styles. In the 70s and 80s, the most popular genres were ‘adhunik’ (modern) and ‘attyadhunik’ (ultra-modern), which can be grouped closer to the Nepali pop music that experienced full boom during the 90s.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-cards-area">
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-music"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Instruments</h4>
+                                            <p>The musical instruments used to create Pop music are :
+                                            <ul>
+                                                <li>Electric Guitar</li>
+                                                <li>Acoustic Guitar</li>
+                                                <li>Electric Bass</li>
+                                                <li>Drums</li>
+                                                <li>Piano</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div> <!-- end of icon cards area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text and icon cards area -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+
+
+    <!-- Video -->
+    <div id="preview" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>PREVIEW</h2>
+                    <div class="p-heading p-large">Target the right customers for your business with the help of Leno's patented segmentation technology</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
+                                <img class="img-fluid" src="{% static 'music/images/video-frame.jpg' %}" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of video -->
+
+
+    <!-- File Upload -->
+    {% include 'music/check_genre.html' %}
+    <!-- Statistics -->
+    <div class="counter" id="statistics">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>STATISTICS</h2>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 3rem;">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Counter -->
+                    <div id="counter">
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="900">1</div>
+                            <p class="counter-info">Total Music</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="540">1</div>
+                            <p class="counter-info">Training Set</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="360">1</div>
+                            <p class="counter-info">Testing Set</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="74.40">1</div>
+                            <p class="counter-info">Accuracy (%)</p>
+                        </div>
+                    </div>
+                    <!-- end of counter -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of statistics -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>CONTACT</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address">Don't hesitate to give us a call or just use the contact form below</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Lamachaur-16, Pokhara</li>
+                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:003024630820">+9779845690436</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:office@leno.com">music@gmail.com</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Name</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Your message</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Leno's stated conditions in <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form -->
+    <!-- end of contact -->
+
+{% endblock %}
+
+
+
+</body>
+<script>
+    $(document).ready(function(){
+        $('.up-input').change(function () {
+            $('.up-p').text(this.files.length + " file(s) selected");
+        });
+    });
+</script>
+</html>
