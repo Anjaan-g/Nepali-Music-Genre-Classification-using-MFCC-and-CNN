@@ -1,19 +1,16 @@
-import matplotlib.pyplot as plt
-from keras.models import load_model
-from keras.preprocessing.sequence import pad_sequences
-from keras.preprocessing.image import load_img
-from keras.preprocessing.image import img_to_array
-from keras.models import Model
-from sklearn.externals import joblib
+import joblib
 import numpy as np
 from keras.preprocessing import image
 from keras import backend as K
 import tensorflow as tf
 import librosa
 from .mel_spectogram import mel_spec
-from django.http import HttpResponse
 global graph
-graph = tf.get_default_graph()
+graph = tf.compat.v1.get_default_graph()
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
+import warnings
+warnings.simplefilter('ignore')
 
 def genre(f):
     K.clear_session()

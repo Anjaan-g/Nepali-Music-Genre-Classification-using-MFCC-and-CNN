@@ -9,6 +9,9 @@ from .music_genre import genre
 from .mel_spectogram import mel_spec
 import numpy as np
 
+import warnings
+warnings.simplefilter('ignore')
+
 # Create your views here.
 class IndexView(ListView):
     template_name= 'music/index.html'
