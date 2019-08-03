@@ -72,8 +72,13 @@
 {% include 'music/snippets/js.html' %}
 
 </body>
-
-
+<script>
+    $(document).ready(function(){
+        $('.up-input').change(function () {
+            $('.up-p').text(this.files.length + " file(s) selected");
+        });
+    });
+</script>
 <!-- Bootstrap core JavaScript -->
 
 </html>

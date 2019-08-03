@@ -18,9 +18,12 @@ graph = tf.get_default_graph()
 def genre(f):
     K.clear_session()
     model = joblib.load('music/finalized_CNNmodel.sav')
+    print("Loading model. Please wait !!!")
     print(model.layers[0].input_shape)
 
+    #preprocessing uploaded file to get mel-spectrogram image
     mel_spec(f)
+
     test_image=image.load_img(f'media/{f.file.name}.png', target_size=(256,256), color_mode='rgb')
     test_image=image.img_to_array(test_image)
     test_image=np.expand_dims(test_image,axis=0)

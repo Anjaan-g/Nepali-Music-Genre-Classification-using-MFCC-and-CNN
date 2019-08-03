@@ -16,9 +16,21 @@
                {{form.as_table}}
               <p class="up-p">Drag your music file here or click in this area.</p>
               <button type="submit" class="btn btn-sm btn-success" style="margin-left: 9rem; width: 30vh;">Check</button>
+
             </form>
         </div> <!-- end of row -->
     </div> <!-- end of container -->
 </div> <!-- end of basic-2 -->
 <!-- end of File Upload -->
+
 {% endblock %}
+
+{% block js%}
+<script>
+    $(document).ready(function(){
+        $('.up-input').change(function () {
+            $('.up-p').text(this.files.length + " file(s) selected");
+        });
+    });
+</script>
+{%endblock%}
